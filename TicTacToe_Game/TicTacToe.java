@@ -69,12 +69,24 @@ public void xWins(int a, int b, int c){
   for(int i=0;i<9;i++) {
     buttons[i].setEnabled(false);
   }
+  buttons[a].setForeground(new Color(255,200,0));
+  buttons[b].setForeground(new Color(255,200,0));
+  buttons[c].setForeground(new Color(255,200,0));
+  buttons[a].setEnabled(true);
+  buttons[b].setEnabled(true);
+  buttons[c].setEnabled(true);
   turn.setText("X wins");
 }
 public void oWins(int a, int b, int c){
-		for(int i=0;i<9;i++) {
-			buttons[i].setEnabled(false);
-		}
+   for(int i=0;i<9;i++) {
+	buttons[i].setEnabled(false);
+}
+  buttons[a].setForeground(new Color(255,200,0));
+  buttons[b].setForeground(new Color(255,200,0));
+  buttons[c].setForeground(new Color(255,200,0));
+  buttons[a].setEnabled(true);
+  buttons[b].setEnabled(true);
+  buttons[c].setEnabled(true);
 		turn.setText("O wins");
 }
 public void winChecker(){
